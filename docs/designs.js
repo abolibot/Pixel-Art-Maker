@@ -36,6 +36,11 @@
 		height = $("#inputHeight").val();
 		makeGrid();
 
+		$("td").hover(function(){
+			$(this).css("cursor", "pointer");
+		});
+
+
 		//code for filling each cell with the selected color when clicked
 		$("td").click(function(){
 			$(this).css("background-color", function(){
